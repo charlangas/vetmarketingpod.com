@@ -1,0 +1,524 @@
+/* ---------- GLOBAL STYLES ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.spacer-100 {
+    padding-top: 100px;
+}
+
+.spacer-50 {
+    padding-top: 50px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #425A42;
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    font-family: "Outfit", sans-serif;
+    font-size: smaller;
+    letter-spacing: 0.15em;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #FFC27B;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.logo img {
+    max-width: 250px;
+}
+
+.cta-button {
+    font-family: "Outfit", sans-serif;
+    font-size: smaller;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background-color: #E69A53;
+    color: #1D251E;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #C87C35;
+}
+
+/* Hero section */
+.hero {
+    background-color: #fff;
+    background: rgb(66,90,66);
+    background: linear-gradient(0deg, rgba(36,60,36,1) 0%, rgba(66,90,66,1) 100%);
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    flex: 1 1;
+    padding-right: 50px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    line-height: 4.2rem;
+    text-transform: capitalize;
+    color: #EFE9D1;
+}
+
+.hero p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #FFC27B;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.row-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.checks {
+    display: flex;
+}
+
+
+/* Why Listen Section */
+.why-listen {
+    background-color: #EFE9D1;
+    display: flex;
+    align-items: flex-start;
+    padding: 30px 20px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.why-listen .hero-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.why-listen .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.why-listen .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.why-listen h2 {
+    color: #4A7251;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #425A42;
+    display: flex;
+    align-items: flex-start;
+    padding: 30px 20px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cta-section .hero-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.cta-section .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cta-section .hero-image img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 0;
+}
+
+.cta-section h2 {
+    color: #EFE9D1;
+}
+
+.cta-section p {
+    color: #FFC27B;
+}
+
+
+/* Footer */
+footer {
+    background-color: #1D251E;
+    color: #FFC27B;
+    padding: 50px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #EFE9D1;
+}
+
+.footer-section p {
+    font-size: 1em;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #a0aec0;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.fraunces {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #4a5568;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #4299e1;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #4a5568;
+    font-size: 0.5em;
+    color: #a0aec0;
+}
+
+/* General Media Queries */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+
+    .hero p {
+        font-size: 1.75rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .hero-content {
+        padding: 50px 20px;
+    }
+
+    /* Why Listen Section */
+    .why-listen, .cta-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .why-listen .hero-text, .cta-section .hero-text {
+        margin-bottom: 20px;
+        padding-right: 0;
+    }
+
+    .why-listen .hero-image, .cta-section .hero-image {
+        order: 2; /* Ensure image is below text */
+    }
+
+    .why-listen .hero-text, .cta-section .hero-text {
+        order: 1;
+    }
+
+    .why-listen .hero-image img, .cta-section .hero-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 0;
+    }
+
+    /* CTA Section */
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+
+    .cta-section p {
+        font-size: 1.25rem;
+    }
+
+    /* Footer Section */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+    }
+
+    .hero-content {
+        padding: 30px 20px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    /* Why Listen Section */
+    .why-listen {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch; /* Ensure the sections stretch to fill the container */
+        justify-content: space-between; /* Space out the content */
+        padding: 20px;
+    }
+
+    .why-listen .hero-image {
+        order: 2;
+        flex-grow: 1; /* Allow the image container to grow and fill the remaining space */
+        display: flex;
+        align-items: flex-end; /* Align the image at the bottom */
+    }
+
+    .why-listen .hero-text {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .why-listen .hero-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 0; /* No margin at the bottom */
+    }
+
+    /* CTA Section */
+    .cta-section {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch; /* Ensure the sections stretch to fill the container */
+        justify-content: space-between; /* Space out the content */
+        padding: 20px;
+    }
+
+    .cta-section .hero-image {
+        order: 2;
+        flex-grow: 1; /* Allow the image container to grow and fill the remaining space */
+        display: flex;
+        align-items: flex-end; /* Align the image at the bottom */
+    }
+
+    .cta-section .hero-text {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .cta-section .hero-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 0; /* No margin at the bottom */
+        padding-bottom: 0;
+    }
+
+    /* Footer Section */
+    /* Footer responsive styles */
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start (left) */
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin-bottom: 20px; /* Add space between logo and nav-list */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Stack the nav items vertically */
+        width: 100%; /* Ensure the nav list takes the full width */
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Add some space between each item */
+        text-align: left; /* Align text to the left */
+    }
+
+    .cta-button {
+        margin-top: 10px;
+    }
+}
