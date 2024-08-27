@@ -21,6 +21,10 @@ body {
     padding-top: 100px;
 }
 
+.spacer-100-mobile {
+    padding-top: 100px;
+}
+
 .spacer-50 {
     padding-top: 50px;
 }
@@ -101,7 +105,7 @@ nav {
     background: rgb(66,90,66);
     background: linear-gradient(0deg, rgba(36,60,36,1) 0%, rgba(66,90,66,1) 100%);
     min-height: 600px;
-    display: flex;
+    display: block;
     align-items: center;
     padding: 100px 20px;
 }
@@ -314,6 +318,57 @@ footer {
     color: #a0aec0;
 }
 
+/* Hero Section - Benefits Row */
+.benefits-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto 0; /* Center the row and add margin */
+}
+
+.benefit-column {
+    flex: 1 1 22%; /* Flexbox: 1 1 22% to create four columns with some margin */
+    max-width: 22%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.benefit-item img {
+    width: 40px; /* Size for the check icon */
+    height: 40px;
+    margin-right: 10px;
+}
+
+.benefit-text p {
+    font-family: 'Fraunces', serif;
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #EFE9D1; /* Adjust the text color as needed */
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    .benefit-column {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .benefit-text p {
+        font-size: 1.25em !important;
+    }
+}
+
+
 /* General Media Queries */
 @media (max-width: 1024px) {
     .container {
@@ -345,6 +400,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .spacer-100-mobile {
+        padding-top: 25px;
+    }
     /* Hero Section */
     .hero h1 {
         font-size: 2.5rem;
